@@ -22,6 +22,7 @@ public class UserController {
     }  
     @RequestMapping(value="/user/{id}", method=RequestMethod.GET)  
     public Optional<UserRecord> getUser(@PathVariable String id){  
-        return userService.getUser(id);  
+        return userService.getUser(id);
+
     }  
 }  
